@@ -14,14 +14,9 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
         self.refreshControl = UIRefreshControl()
         self.refreshControl?.attributedTitle = NSAttributedString(string: "引っ張って更新")
         self.refreshControl?.addTarget(self, action: "refresh", forControlEvents: UIControlEvents.ValueChanged)
-//        self.tableView.addSubview(refreshControl)
-//
-//        self.refreshControl = refreshControl
-        print(self.refreshControl)
 
     }
     
